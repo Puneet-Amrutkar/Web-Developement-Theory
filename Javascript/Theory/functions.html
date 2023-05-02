@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Functions</title>
+    </head>
+    <body>
+        <h1>Functions in Javascript</h1>
+        <script>
+            //conventional functions
+            function conventional()
+            {
+                console.log('This is a conventional function type');
+            }
+            conventional();
+
+            //conventional functions taking and returning some value
+            function conv_ret(a,b)
+            {
+                return a+b;
+            }
+            console.log(conv_ret(5,2));
+
+            //arrow functions
+            let arrow_1 = () =>
+            {
+                console.log('I am an arrow function');
+            }
+            arrow_1();
+
+            //arrow functions returning some value 
+            let arrow_2 = (a,b) =>
+            {
+                return a%b;
+            }
+            console.log(arrow_2(5,2));
+
+            //one liner arrow functions 
+            //syntax: func name = () => value to be returned
+            let arrow_3 = (a,b,c) => a+b+c;
+            console.log(arrow_3(1,2,3)); 
+
+            //to return an object, syntax: func name = () => ({name: 'puneet'})
+        </script>
+    </body>
+</html>
