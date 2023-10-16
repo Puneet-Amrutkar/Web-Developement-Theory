@@ -23,4 +23,6 @@ let api =
     company: 'google'
 }]
 
-module.exports = api;
+module.exports = {
+    api: api
+};
